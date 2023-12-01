@@ -1,0 +1,9 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: jcon-app-svc
+spec:
+  template:
+    spec:
+      containers:
+        - image: eldermoraes/jcon-app:1.0-SNAPSHOT
